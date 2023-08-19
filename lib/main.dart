@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
           textTheme: GoogleFonts.josefinSansTextTheme(),
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity),
-      home: LoginPage(),
+      home: const LoginPage(),
     );
   }
 }

@@ -22,21 +22,21 @@ class _LoginPageState extends State<LoginPage> {
             child: SafeArea(
               child: Column(
                 children: [
-                  SizedBox(height: 100),
-                  Center(
+                  const SizedBox(height: 100),
+                  const Center(
                     child: Text(
                       'Foodybite',
                       style: kHeading,
                     ),
                   ),
-                  SizedBox(height: 100),
+                  const SizedBox(height: 100),
                   Form(
                     child: Container(
-                      margin: EdgeInsets.symmetric(horizontal: 40),
+                      margin: const EdgeInsets.symmetric(horizontal: 40),
                       child: Column(
                         children: [
                           Container(
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                                 horizontal: 20, vertical: 5),
                             decoration: BoxDecoration(
                               color: Colors.grey[600]!.withOpacity(0.5),
@@ -64,9 +64,9 @@ class _LoginPageState extends State<LoginPage> {
                               textInputAction: TextInputAction.next,
                             ),
                           ),
-                          SizedBox(height: 12),
+                          const SizedBox(height: 12),
                           Container(
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                                 horizontal: 20, vertical: 5),
                             decoration: BoxDecoration(
                               color: Colors.grey[600]!.withOpacity(0.5),
@@ -95,7 +95,7 @@ class _LoginPageState extends State<LoginPage> {
                               textInputAction: TextInputAction.done,
                             ),
                           ),
-                          SizedBox(height: 8),
+                          const SizedBox(height: 8),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
@@ -105,17 +105,17 @@ class _LoginPageState extends State<LoginPage> {
                               ),
                             ],
                           ),
-                          SizedBox(height: 60),
+                          const SizedBox(height: 60),
                           Container(
                             width: MediaQuery.of(context).size.width,
-                            padding: EdgeInsets.symmetric(vertical: 5),
+                            padding: const EdgeInsets.symmetric(vertical: 5),
                             decoration: BoxDecoration(
                               color: Colors.blue,
                               borderRadius: BorderRadius.circular(16),
                             ),
                             child: TextButton(
                               onPressed: () => print('Login'),
-                              child: Text(
+                              child: const Text(
                                 'Login',
                                 textAlign: TextAlign.center,
                                 style: kBodyText,
@@ -126,10 +126,10 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                   ),
-                  SizedBox(height: 80),
+                  const SizedBox(height: 80),
                   TextButton(
                     onPressed: () => print('Account'),
-                    child: Text(
+                    child: const Text(
                       'Create New Account',
                       style: TextStyle(
                           color: Colors.white,
